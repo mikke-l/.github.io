@@ -22,7 +22,7 @@ jobs:
         run: npm ci
       # Step 3 - Add tests and linting her
       
- 
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -39,4 +39,10 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
-
+  steps:
+      - name: "Hello world when it's Monday"
+        run: echo "Hello $FIRST_NAME $MIDDLE_NAME $LAST_NAME, today is Monday!"
+        env:
+          FIRST_NAME: Mona
+          MIDDLE_NAME: The
+          LAST_NAME: Octocat
