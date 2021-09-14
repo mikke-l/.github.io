@@ -39,7 +39,7 @@ jobs:
           folder: dist
 
 
-jobs:
+jobss:
   develop:
     build:
       runs-on: ubuntu-latest
